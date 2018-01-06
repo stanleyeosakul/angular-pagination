@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+
+      <!-- Hero -->
+      <section class="hero is-light">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Angular Pagination Example</h1>
+            <h2 class="subtitle">Using logic implemented by Google</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Items being listed -->
+      <br>
+      <table class="table is-striped is-hoverable is-narrow is-fullwidth">
+        <tbody>
+          <tr *ngFor="let item of pagedItems">
+            <td class="has-text-centered">{{ item.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+
+      <!-- Pagination -->
+      <nav class="pagination is-right" role="navigation" aria-label="pagination">
+        
+        <!-- Logic for First, Previous, Next, and Last Links -->
+        <a class="pagination-previous" (click)="setPage(1)" [class.disabled]="pagination.currentPage === 1">
+          First
+        </a>
+        <a class="pagination-previous" (click)="setPage(pagination.currentPage - 1)" [class.disabled]="pagination.currentPage === 1">
+          Previous
+        </a>
+        <a class="pagination-next" (click)="setPage(pagination.currentPage + 1)" [class.disabled]="pagination.currentPage === pagination.totalPages">
+          Next
+        </a>
+        <a class="pagination-next" (click)="setPage(pagination.totalPages)" [class.disabled]="pagination.currentPage === pagination.totalPages">
+          Last
+        </a>
+        
+        <!-- List of pages -->
+        <ul *ngIf="pagination.pages && pagination.pages.length" class="pagination-list">
+          <li *ngFor="let page of pagination.pages">
+            <a class="pagination-link" [class.is-current]="pagination.currentPage === page" aria-label="Goto page 1" (click)="setPage(page)">{{ page }}</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+</section>

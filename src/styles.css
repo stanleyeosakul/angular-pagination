@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+.disabled {
+  border-color: #dbdbdb;
+  background-color: #dbdbdb;
+  box-shadow: none;
+  color: #7a7a7a;
+  opacity: .5;
+  pointer-events: none;
+}
