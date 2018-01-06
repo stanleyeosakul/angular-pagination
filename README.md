@@ -1,5 +1,5 @@
 # Angular Pagination Example
-This project shows how to implement pagination in Angular as shown in the article [Angular 2/5 - Pagination Example with Logic like Google](http://jasonwatmore.com/post/2016/08/23/angular-2-pagination-example-with-logic-like-google) by *Jason Watmore*.
+This project shows how to implement pagination in Angular as shown in the article [Angular 2/5 - Pagination Example with Logic like Google](http://jasonwatmore.com/post/2016/08/23/angular-2-pagination-example-with-logic-like-google) by *Jason Watmore*.  His GitHub repo with his original project can be found [here](https://github.com/cornflourblue/angular2-pagination-example).
 
 <p align="center">
     <img width="500" height="358" src="./src/assets/png/homepage.png"><br>
