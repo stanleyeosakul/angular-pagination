@@ -3,7 +3,6 @@ This project shows how to implement pagination in Angular as shown in the articl
 
 <p align="center">
     <img width="500" height="358" src="./src/assets/png/homepage.png"><br>
-    <a href="https://angularpagination.firebaseapp.com/" target="_blank">Angular Pagination Example</a>
 </p>
 
 ## Software Used
